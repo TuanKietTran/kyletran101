@@ -6,15 +6,14 @@
   "scripts": {
     "build": "strapi build",
     "deploy": "strapi deploy",
-    "develop": "strapi develop",
+    "dev": "strapi develop",
     "start": "strapi start",
     "strapi": "strapi"
   },
   "dependencies": {
-    "@strapi/plugin-cloud": "5.6.0",
-    "@strapi/plugin-users-permissions": "5.6.0",
-    "@strapi/strapi": "5.6.0",
-    "better-sqlite3": "11.3.0",
+    "@strapi/plugin-cloud": "5.7.0",
+    "@strapi/plugin-users-permissions": "5.7.0",
+    "@strapi/strapi": "5.7.0",
     "react": "^18.0.0",
     "react-dom": "^18.0.0",
     "react-router-dom": "^6.0.0",
@@ -31,6 +30,6 @@
     "npm": ">=6.0.0"
   },
   "strapi": {
-    "uuid": "561a7981-fa75-46b8-bbe2-aeec07ec1ab6"
+    "uuid": "bfd70778-2b2f-41ff-8e26-76fdd43d9864"
   }
 }
