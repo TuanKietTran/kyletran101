@@ -18,8 +18,7 @@
   },
   "devDependencies": {
     "prettier": "^3.2.5",
-    "turbo": "^2.1.2",
-    "pg": "8.8.0"
+    "turbo": "^2.1.2"
   },
   "packageManager": "npm@10.5.0",
   "workspaces": [

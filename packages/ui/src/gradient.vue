@@ -23,3 +23,29 @@ const props = withDefaults(
     "
   />
 </template>
+
+<style scoped>
+
+
+/* Gradients */
+.gradient {
+  position: absolute;
+  mix-blend-mode: normal;
+  will-change: filter;
+}
+
+.gradientSmall {
+  filter: blur(32px);
+}
+
+.gradientLarge {
+  filter: blur(75px);
+}
+
+.glowConic {
+  background-image: var(--glow-conic);
+}
+
+
+
+</style>
