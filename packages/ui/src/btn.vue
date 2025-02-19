@@ -40,7 +40,7 @@ const showRipple = ref(false);
 const rippleStyle = ref({});
 
 const buttonClass = computed(() => {
-  let classes = ['btn'];
+  const classes = ['btn'];
 
   switch (props.variant) {
     case 'primary':

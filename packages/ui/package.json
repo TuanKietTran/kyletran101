@@ -3,6 +3,7 @@
   "version": "0.0.0",
   "main": "./index.ts",
   "devDependencies": {
+    "@iconify/vue": "^4.3.0",
     "@iconify-json/fa6-regular": "^1.2.3",
     "@iconify-json/fa6-solid": "^1.2.3",
     "@iconify-json/line-md": "^1.2.5",

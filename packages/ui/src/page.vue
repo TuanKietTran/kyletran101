@@ -5,10 +5,12 @@ import Gradient from "./gradient.vue";
 
 <template>
   <main class="main">
-    <div class="logoGradientContainer">
+    <!-- <div class="content"> -->
+      <slot />
+    <!-- </div> -->
+    <!-- <div class="logoGradientContainer">
       <Gradient class="logoGradient" :conic="true" :small="true" />
-    </div>
-    <slot />
+    </div> -->
     <Gradient class="backgroundGradient" conic />
   </main>
 </template>
@@ -20,13 +22,15 @@ import Gradient from "./gradient.vue";
   justify-content: space-between;
   align-items: center;
   padding: 6rem;
-  min-height: 100vh;
+  gap: 2rem;
 }
+
+
+
 
 .logoGradientContainer {
   display: flex;
   position: absolute;
-  z-index: 50;
   justify-content: center;
   align-items: center;
   width: 16rem;
@@ -40,9 +44,9 @@ import Gradient from "./gradient.vue";
 }
 
 .backgroundGradient {
-  top: -500px;
+  position: absolute;
   width: 1000px;
-  height: 1000px;
+  height: 90vh;
   opacity: 0.15;
 }
 

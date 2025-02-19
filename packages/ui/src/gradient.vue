@@ -32,6 +32,8 @@ const props = withDefaults(
   position: absolute;
   mix-blend-mode: normal;
   will-change: filter;
+  padding: 0;
+  margin: 0;
 }
 
 .gradientSmall {

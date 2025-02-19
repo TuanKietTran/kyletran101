@@ -1,29 +1,38 @@
 <script setup lang="ts">
-import { Icon } from '@iconify/vue';
-import Logo from './logo.vue';
-import Btn from './btn.vue';
-import { ref } from 'vue';
+import { Icon } from "@iconify/vue";
+import { ref } from "vue";
+import Btn from "./btn.vue";
 
 const props = defineProps<{
   appName: string;
 }>();
 
 const isClickToDark = ref(false);
-
 </script>
 
 <template>
   <header>
-    <div class="brand">
-      <Logo />
-      <h1><a href="/">{{ props.appName }}</a></h1>
-    </div>
+    <h1>
+      <a href="/">{{ props.appName }}</a>
+    </h1>
     <div class="actions">
-      <Btn variant="outline" size="sm" aria-label="Toggle navigation" @click="isClickToDark = !isClickToDark">
-        <Icon :icon="isClickToDark ? 'line-md:moon-twotone-loop' : 'line-md:sunny-outline-loop'" style="font-size: 24px;" />
+      <Btn
+        variant="outline"
+        size="sm"
+        aria-label="Toggle navigation"
+        @click="isClickToDark = !isClickToDark"
+      >
+        <Icon
+          :icon="
+            isClickToDark
+              ? 'line-md:moon-twotone-loop'
+              : 'line-md:sunny-outline-loop'
+          "
+          style="font-size: 24px"
+        />
       </Btn>
       <Btn variant="outline" size="sm" aria-label="Toggle navigation">
-        <Icon icon="fa6-solid:bars" style="font-size: 24px;" />
+        <Icon icon="fa6-solid:bars" style="font-size: 24px" />
       </Btn>
     </div>
     <nav style="display: none"></nav>

@@ -71,6 +71,8 @@
   --button-bg-disabled: rgb(var(--callout-rgb));
   --button-color-disabled: rgb(var(--callout-border-rgb));
   --button-border-disabled: transparent;
+
+  --avatar-border-color: rgb(var(--foreground-rgb));
 }
 
 @media (prefers-color-scheme: dark) {
