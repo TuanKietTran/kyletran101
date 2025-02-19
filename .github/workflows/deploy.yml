@@ -39,6 +39,6 @@ jobs:
         with:
           project: "kyletran101"
           entrypoint: "server/index.ts"
-          root: ".output"
+          root: "apps/web/.output"
           
           
